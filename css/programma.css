@@ -2136,6 +2136,8 @@ body.fixed {
 }
 .programma-CTR ul {
   column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
 }
 .programma-CTR .giorno-thumb {
   display: inline-block;
