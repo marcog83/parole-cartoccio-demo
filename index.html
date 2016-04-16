@@ -288,9 +288,9 @@
             <a href="mailto://parolealcartoccio@cartamarea.it">parolealcartoccio@cartamarea.it</a></p>
     </div>
 </footer>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
 <script>
-    var map
+    var map;
     window.initMap=function(){
          map=new google.maps.Map(document.querySelector(".map-CNT"),{
             center:{lat:44.199074,lng:12.396897},//44.199074,
@@ -317,5 +317,6 @@
     };
 
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 </html>
