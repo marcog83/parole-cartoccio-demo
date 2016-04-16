@@ -1,0 +1,174 @@
+@import "_reset";
+@import "_icomoon";
+@import "_scrollbar";
+
+* {
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+
+}
+
+body {
+  font: 0/0 arial, sans-serif;
+  text-align: left;
+  background: #fafafa;
+  color: #57585a;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.fixed {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
+.has-font {
+  font: 16px/16px arial, sans-serif;
+  line-height: 1;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper-CNT {
+  max-width: 1000px;
+  margin: auto;
+  z-index: 0;
+  position: relative;
+}
+
+.icona-logo {
+  width: 32px;
+  height: 32px;
+  background: url("../gfx/smoke.png") 0 0 no-repeat transparent;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.titolo {
+  font-size: 40px;
+
+  color: #ed4449;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.header {
+  padding: 20px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  display: table;
+  width: 100%;
+  ul {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+
+  }
+  li.header-item {
+    display: inline-block;
+    &:nth-child(2) {
+      margin-right: 20px;
+      color: #ed4449;
+    }
+    &:first-child {
+      width: 32px;
+      height: 40px;
+      vertical-align: bottom;
+    }
+  }
+
+  .location {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -1px;
+  }
+  .date {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: -1px;
+  }
+}
+
+.menu {
+  text-align: right;
+
+  box-sizing: border-box;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:first-child{
+      margin-right: 20px;
+    }
+    a {
+      color: #ed4449;
+      p {
+        padding: 20px 20px;
+        border: 1px solid #ed4449;
+        text-transform: uppercase;
+        border-radius: 8px;
+        font-weight: 700;
+        letter-spacing: -1px;;
+      }
+    }
+
+  }
+}
+.header.fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: rgba(223, 244, 165, 0.85);
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  li{
+    .header-item{
+      &:first-child {
+        width: 32px;
+        height: 36px;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .location {
+    font-size: 40px;
+
+  }
+  .date {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  .menu li a {
+    p {
+      padding: 10px 20px;
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  }
+}
+@media all and(max-width: 767px) {
+  .wrapper-CNT {
+    width: 100%;
+    padding: 0 15px;
+    &.no-padding {
+      padding: 0;
+    }
+  }
+
+}

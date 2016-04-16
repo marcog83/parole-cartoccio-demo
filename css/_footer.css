@@ -1,0 +1,63 @@
+.organizzatori {
+  text-align: center;
+  margin-top: 50px;
+}
+.organizzatori p {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+.organizzatori li {
+  display: inline-block;
+  vert-align: middle;
+  width: 25%;
+}
+.organizzatori li img {
+  width: 128px;
+}
+.patrocinio {
+  text-align: center;
+  margin-top: 50px;
+}
+.patrocinio p {
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+.patrocinio li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.patrocinio li:last-child {
+  margin-right: 0;
+}
+.patrocinio li img {
+  width: 40px;
+}
+.partecipazione {
+  text-align: center;
+  margin-top: 20px;
+}
+.partecipazione p {
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+.partecipazione li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.partecipazione li:last-child {
+  margin-right: 0;
+}
+.partecipazione li img {
+  width: 40px;
+}
+.footer-end {
+  text-align: center;
+  padding: 30px 0;
+  background: #dff4a5;
+  font-size: 12px;
+  margin: 25px 0 0;
+}

@@ -1,0 +1,132 @@
+.speakers {
+  margin-top: 100px;
+  background: #dff4a5;
+  ul {
+    margin-top: 100px;
+  }
+  .altri-autori-btn {
+    visibility: hidden;
+    &:checked + .horizontal {
+
+      min-height: 1050px;
+      max-height: 1050px;
+
+    }
+  }
+  .horizontal {
+    &.checked{
+      min-height: inherit;
+      max-height: inherit;
+      padding-top: 40px;
+    }
+    overflow: hidden;
+
+    min-height: 0;
+    max-height: 0;
+    transition: min-height 0.5s ease-out, max-height 0.5s ease-out;
+    ul {
+      margin-top: 0;
+    }
+
+    .speaker {
+      width: 33.33%;
+      padding: 0 10px;
+      vertical-align: top;
+      .avatar {
+        display: block;
+
+        width: 100%;
+        height: 320px;
+
+        border-radius: 0;
+        border: none;
+
+        margin-right: 0;
+
+      }
+      .text-CTR {
+        display: inline-block;
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 0 20px;
+        .name {
+          font-size: 30px;
+          color: #ed4449;
+        }
+        .info {
+          margin-top: 15px;
+          font-size: 13px;
+        }
+        .abstract {
+
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .speaker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin: 30px 0;
+    &.right {
+      .avatar {
+        margin-right: 0;
+        margin-left: 40px;
+      }
+      .text-CTR {
+        text-align: right;
+
+      }
+    }
+    .avatar {
+      display: inline-block;
+      vertical-align: middle;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 20px solid rgba(255, 255, 255, 0.5);
+      box-sizing: border-box;
+      margin-right: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .text-CTR {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 640px;
+      .name {
+        font-size: 50px;
+        letter-spacing: -1px;
+        color: #ed4449;
+      }
+      .subtitle {
+
+      }
+      .info {
+        margin-top: 15px;
+      }
+      .abstract {
+        line-height: 1.5;
+        margin-top: 40px;
+
+      }
+      .social {
+        margin-top: 10px;
+        a {
+          margin-right: 20px;
+          .icon {
+            font-size: 20px;
+
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+}

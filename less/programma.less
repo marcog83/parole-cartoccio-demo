@@ -1,0 +1,76 @@
+@import "_common";
+
+.wrapper {
+  padding-top: 150px;
+}
+
+.programma {
+  margin-top: 60px;
+  p {
+    line-height: 1.5;
+
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.programma-CTR {
+  margin: 70px 0;
+  ul{
+    column-count: 2;
+  }
+  .giorno-thumb {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    .title{
+      color:#ed4449 ;
+      font-size: 40px;
+      > div{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -45px;
+      }
+      .text{
+
+      }
+      .icon{
+        background: url("../gfx/programma-icon.png")0 0 no-repeat;
+        width: 149px;
+        height: 148px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .date{
+     // font-size: 18px;
+     // color: #57585a;
+      font-weight: 700;
+      margin: 5px 0px 10px;
+      border-bottom: 1px solid #dee6a3;
+      padding-bottom: 10px;
+      span {
+        margin-right: 5px;
+        &.icon{
+          margin-right: 2px;
+        }
+      }
+    }
+    .event{
+      padding: 0 40px 0 120px;
+      margin: 20px 0 0;
+    }
+    .abstract{
+
+      line-height: 1.5;
+
+    }
+    strong{
+      font-weight: bold;
+      color: #ed4449;
+    }
+  }
+}
+
+@import '_footer';

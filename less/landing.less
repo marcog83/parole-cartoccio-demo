@@ -1,0 +1,169 @@
+@import "_common";
+
+.homepage-CTR {
+  min-height: 100%;
+}
+
+.homepage {
+  background: url("../gfx/bg.jpg") 50% 0 no-repeat #fff;
+  background-size: cover;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-CNT {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  padding: 50px 0;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    padding: 0 0 25px;
+    height: 160px;
+  }
+}
+
+.text-CNT {
+  text-align: center;
+  color: #ffffff;
+  .location {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -1px;
+  }
+  .date {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    padding: 20px 0 25px;
+  }
+  .title {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+}
+
+.share-CTR {
+  text-align: center;
+  padding: 35px 0 25px;
+  .share-item {
+    display: inline-block;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: #ffffff;
+    }
+    .icon {
+      font-size: 30px;
+    }
+  }
+}
+
+
+
+.programma {
+  margin-top: 60px;
+  p {
+    line-height: 1.5;
+
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.titolo {
+  font-size: 70px;
+  color: #ed4449;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding-top: 50px;
+}
+.titolo-sub{
+  padding-left: 50px;
+}
+.altri-btn {
+  text-align: center;
+  padding: 30px 0;
+  .altri-autori-label {
+    cursor: pointer;
+    display: inline-block;
+    p {
+      text-transform: uppercase;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.46);
+      &.programma-btn{
+        background: rgb(223, 244, 165);
+
+      }
+    }
+
+  }
+}
+
+.programma-CTR {
+  margin: 70px 0;
+
+  .giorno-thumb {
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    .title{
+      color:#ed4449 ;
+      font-size: 40px;
+      > div{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -45px;
+      }
+      .text {
+        font-size: 28px;
+      }
+      .icon{
+        background: url("../gfx/programma-icon.png")0 0 no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .date{
+
+
+      padding-bottom: 10px;
+      span {
+        margin-right: 5px;
+        &.icon{
+          margin-right: 2px;
+        }
+      }
+    }
+    .event{
+      padding: 0 40px 0 70px;
+      margin: 20px 0 0;
+    }
+    .abstract{
+
+      line-height: 1.5;
+
+    }
+    strong{
+      font-weight: bold;
+      color: #ed4449;
+    }
+  }
+}
+.map-CNT{
+  height:400px;
+  margin: 50px 0;
+}
+@import '_speaker';
+
+@import '_footer';

@@ -1,0 +1,67 @@
+body {
+  scrollbar-base-color: #C0C0C0;
+  scrollbar-base-color: #C0C0C0;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-highlight-color: #C0C0C0;
+  scrollbar-track-color: #EBEBEB;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: #C0C0C0;
+  scrollbar-dark-shadow-color: #C0C0C0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  background-color: #666;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: rgba(102, 102, 102, 0.33);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+
+::-webkit-resizer {
+  background-color: rgba(102, 102, 102, 0.5);
+}
+
+@-moz-document url-prefix(http://), url-prefix(https://) {
+  scrollbar {
+    -moz-appearance: none !important;
+    background: rgb(0, 255, 0) !important;
+  }
+  thumb, scrollbarbutton {
+    -moz-appearance: none !important;
+    background-color: rgb(0, 0, 255) !important;
+  }
+  thumb:hover {
+    -moz-appearance: none !important;
+    background-color: rgb(255, 0, 0) !important;
+  }
+  scrollbarbutton {
+    &:hover {
+      -moz-appearance: none !important;
+      background-color: rgb(255, 0, 0) !important;
+    }
+    display: none !important;
+  }
+  scrollbar[orient="vertical"] {
+    min-width: 15px !important;
+  }
+}
